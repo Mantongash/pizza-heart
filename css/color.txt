@@ -1,0 +1,4 @@
+Color Scheme
+
+Teal: #008080
+Orange: ff6600ff
