@@ -77,195 +77,222 @@
               />
               <a href="#" class="btn btn-success">Select</a>
             </div>
+            <div class="chicago-options">
+              <!-- How many Pizzas -->
+              <div class="input-group my-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >How many</label
+                  >
+                </div>
+                <input type="number" min="1" max="30" value="1" />
+              </div>
 
-            <!-- How many Pizzas -->
-            <div class="input-group my-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >How many</label
+              <!-- Size -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >Size</label
+                  >
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected disabled>Choose Size</option>
+                  <option value="large">Large &nbsp; / &nbsp; KES: 1000</option>
+                  <option value="medium"
+                    >Medium &nbsp; / &nbsp; KES: 750</option
+                  >
+                  <option value="small">Small &nbsp; / &nbsp; KES: 500</option>
+                </select>
+              </div>
+
+              <!-- Toppings -->
+
+              <div class="custom-control custom-checkbox">
+                <p>
+                  <strong>NOTE:</strong> Topping prices vary depending on pizza
+                  size
+                </p>
+                <input type="checkbox" class="custom-control-input" id="beef" />
+                <label for="beef" class="custom-control-label"
+                  >Ground Beef</label
                 >
               </div>
-              <input type="number" min="1" max="30" value="1" />
-            </div>
-
-            <!-- Size -->
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >Size</label
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="sausage"
+                />
+                <label for="sausage" class="custom-control-label"
+                  >Sausage</label
                 >
               </div>
-              <select class="custom-select" id="inputGroupSelect01">
-                <option selected disabled>Choose Size</option>
-                <option value="large">Large &nbsp; / &nbsp; KES: 1000</option>
-                <option value="medium">Medium &nbsp; / &nbsp; KES: 750</option>
-                <option value="small">Small &nbsp; / &nbsp; KES: 500</option>
-              </select>
-            </div>
-
-            <!-- Toppings -->
-
-            <div class="custom-control custom-checkbox">
-              <p>
-                <strong>NOTE:</strong> Topping prices vary depending on pizza
-                size
-              </p>
-              <input type="checkbox" class="custom-control-input" id="beef" />
-              <label for="beef" class="custom-control-label">Ground Beef</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="sausage"
-              />
-              <label for="sausage" class="custom-control-label">Sausage</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="pepperoni"
-              />
-              <label for="pepperoni" class="custom-control-label"
-                >Pepperoni</label
-              >
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="onions" />
-              <label for="onions" class="custom-control-label"> Onions</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="mushrooms"
-              />
-              <label for="mushrooms" class="custom-control-label"
-                >Mushrooms</label
-              >
-            </div>
-
-            <!-- Crust -->
-            <div class="input-group my-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >Crust</label
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="pepperoni"
+                />
+                <label for="pepperoni" class="custom-control-label"
+                  >Pepperoni</label
                 >
               </div>
-              <select class="custom-select" id="inputGroupSelect01">
-                <option selected disabled>Choose Crust</option>
-                <option value="crispy">Crispy &nbsp; &nbsp; / + 200</option>
-                <option value="stuffed">Stuffed &nbsp; &nbsp; / + 150</option>
-                <option value="gluttenFree"
-                  >Glutten-free &nbsp; &nbsp; / + 300</option
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="onions"
+                />
+                <label for="onions" class="custom-control-label"> Onions</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="mushrooms"
+                />
+                <label for="mushrooms" class="custom-control-label"
+                  >Mushrooms</label
                 >
-              </select>
+              </div>
+
+              <!-- Crust -->
+              <div class="input-group my-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >Crust</label
+                  >
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected disabled>Choose Crust</option>
+                  <option value="crispy">Crispy &nbsp; &nbsp; / + 200</option>
+                  <option value="stuffed">Stuffed &nbsp; &nbsp; / + 150</option>
+                  <option value="gluttenFree"
+                    >Glutten-free &nbsp; &nbsp; / + 300</option
+                  >
+                </select>
+              </div>
+              <a href="#" class="btn btn-danger">Remove Item (s)</a>
             </div>
-            <a href="#" class="btn btn-danger">Remove Item (s)</a>
           </div>
 
-          <!-- Pizza Marinara -->
-          <div class="col-md-3">
-            <h4>Pizza Marinara</h4>
-            <div
-              class="pizza d-flex justify-content-center align-items-center flex-column"
-            >
-              <img
-                src="images/pizza-marinara.jpg"
-                alt="Pizza Marinara"
-                width="300"
-              />
-              <a href="#" class="btn btn-success">Select</a>
-            </div>
+          <div class="marinara-options">
+            <!-- Pizza Marinara -->
+            <div class="col-md-3">
+              <h4>Pizza Marinara</h4>
+              <div
+                class="pizza d-flex justify-content-center align-items-center flex-column"
+              >
+                <img
+                  src="images/pizza-marinara.jpg"
+                  alt="Pizza Marinara"
+                  width="300"
+                />
+                <a href="#" class="btn btn-success">Select</a>
+              </div>
 
-            <!-- How many Pizzas -->
-            <div class="input-group my-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >How many</label
+              <!-- How many Pizzas -->
+              <div class="input-group my-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >How many</label
+                  >
+                </div>
+                <input type="number" min="1" max="30" value="1" />
+              </div>
+
+              <!-- Size -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >Size</label
+                  >
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected disabled>Choose Size</option>
+                  <option value="large">Large &nbsp; / &nbsp; KES: 1050</option>
+                  <option value="medium"
+                    >Medium &nbsp; / &nbsp; KES: 800</option
+                  >
+                  <option value="small">Small &nbsp; / &nbsp; KES: 550</option>
+                </select>
+              </div>
+
+              <!-- Toppings -->
+
+              <div class="custom-control custom-checkbox">
+                <p>
+                  <strong>NOTE:</strong> Topping prices vary depending on pizza
+                  size
+                </p>
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="mozzarella"
+                />
+                <label for="mozzarella" class="custom-control-label"
+                  >Fresh Mozzarella</label
                 >
               </div>
-              <input type="number" min="1" max="30" value="1" />
-            </div>
-
-            <!-- Size -->
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >Size</label
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="tomatoes"
+                />
+                <label for="tomatoes" class="custom-control-label"
+                  >Tomatoes</label
                 >
               </div>
-              <select class="custom-select" id="inputGroupSelect01">
-                <option selected disabled>Choose Size</option>
-                <option value="large">Large &nbsp; / &nbsp; KES: 1050</option>
-                <option value="medium">Medium &nbsp; / &nbsp; KES: 800</option>
-                <option value="small">Small &nbsp; / &nbsp; KES: 550</option>
-              </select>
-            </div>
-
-            <!-- Toppings -->
-
-            <div class="custom-control custom-checkbox">
-              <p>
-                <strong>NOTE:</strong> Topping prices vary depending on pizza
-                size
-              </p>
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="mozzarella"
-              />
-              <label for="mozzarella" class="custom-control-label"
-                >Fresh Mozzarella</label
-              >
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="tomatoes"
-              />
-              <label for="tomatoes" class="custom-control-label"
-                >Tomatoes</label
-              >
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="basil" />
-              <label for="basil" class="custom-control-label"
-                >Basil Leaves</label
-              >
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="oregano"
-              />
-              <label for="oregano" class="custom-control-label"> Oregano</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="olive" />
-              <label for="olive" class="custom-control-label">Olive Oil</label>
-            </div>
-
-            <!-- Crust -->
-            <div class="input-group my-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >Crust</label
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="basil"
+                />
+                <label for="basil" class="custom-control-label"
+                  >Basil Leaves</label
                 >
               </div>
-              <select class="custom-select" id="inputGroupSelect01">
-                <option selected disabled>Choose Crust</option>
-                <option value="crispy">Crispy &nbsp; &nbsp; / + 200</option>
-                <option value="stuffed">Stuffed &nbsp; &nbsp; / + 150</option>
-                <option value="gluttenFree"
-                  >Glutten-free &nbsp; &nbsp; / + 300</option
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="oregano"
+                />
+                <label for="oregano" class="custom-control-label">
+                  Oregano</label
                 >
-              </select>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="olive"
+                />
+                <label for="olive" class="custom-control-label"
+                  >Olive Oil</label
+                >
+              </div>
+
+              <!-- Crust -->
+              <div class="input-group my-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >Crust</label
+                  >
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected disabled>Choose Crust</option>
+                  <option value="crispy">Crispy &nbsp; &nbsp; / + 200</option>
+                  <option value="stuffed">Stuffed &nbsp; &nbsp; / + 150</option>
+                  <option value="gluttenFree"
+                    >Glutten-free &nbsp; &nbsp; / + 300</option
+                  >
+                </select>
+              </div>
+              <a href="#" class="btn btn-danger">Remove Item (s)</a>
             </div>
-            <a href="#" class="btn btn-danger">Remove Item (s)</a>
           </div>
 
           <!-- Sicilian Pizza -->
@@ -282,89 +309,97 @@
               <a href="#" class="btn btn-success">Select</a>
             </div>
 
-            <!-- How many Pizzas -->
-            <div class="input-group my-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >How many</label
+            <div class="sicilian-options">
+              <!-- How many Pizzas -->
+              <div class="input-group my-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >How many</label
+                  >
+                </div>
+                <input type="number" min="1" max="30" value="1" />
+              </div>
+
+              <!-- Size -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >Size</label
+                  >
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected disabled>Choose Size</option>
+                  <option value="large">Large &nbsp; / &nbsp; KES: 1200</option>
+                  <option value="medium"
+                    >Medium &nbsp; / &nbsp; KES: 900</option
+                  >
+                  <option value="small">Small &nbsp; / &nbsp; KES: 600</option>
+                </select>
+              </div>
+
+              <!-- Toppings -->
+
+              <div class="custom-control custom-checkbox">
+                <p>
+                  <strong>NOTE:</strong> Topping prices vary depending on pizza
+                  size
+                </p>
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="sicilian-tomatoes"
+                />
+                <label for="sicilian-tomatoes" class="custom-control-label"
+                  >Tomatoes</label
                 >
               </div>
-              <input type="number" min="1" max="30" value="1" />
-            </div>
-
-            <!-- Size -->
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >Size</label
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="sicilian-onions"
+                />
+                <label for="sicilian-onions" class="custom-control-label"
+                  >Onions</label
                 >
               </div>
-              <select class="custom-select" id="inputGroupSelect01">
-                <option selected disabled>Choose Size</option>
-                <option value="large">Large &nbsp; / &nbsp; KES: 1200</option>
-                <option value="medium">Medium &nbsp; / &nbsp; KES: 900</option>
-                <option value="small">Small &nbsp; / &nbsp; KES: 600</option>
-              </select>
-            </div>
-
-            <!-- Toppings -->
-
-            <div class="custom-control custom-checkbox">
-              <p>
-                <strong>NOTE:</strong> Topping prices vary depending on pizza
-                size
-              </p>
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="sicilian-tomatoes"
-              />
-              <label for="sicilian-tomatoes" class="custom-control-label"
-                >Tomatoes</label
-              >
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="sicilian-onions"
-              />
-              <label for="sicilian-onions" class="custom-control-label"
-                >Onions</label
-              >
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="anchovies"
-              />
-              <label for="anchovies" class="custom-control-label"
-                >Anchovies</label
-              >
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="herbs" />
-              <label for="herbs" class="custom-control-label"> Herbs</label>
-            </div>
-
-            <!-- Crust -->
-            <div class="input-group my-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >Crust</label
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="anchovies"
+                />
+                <label for="anchovies" class="custom-control-label"
+                  >Anchovies</label
                 >
               </div>
-              <select class="custom-select" id="inputGroupSelect01">
-                <option selected disabled>Choose Crust</option>
-                <option value="crispy">Crispy &nbsp; &nbsp; / + 200</option>
-                <option value="stuffed">Stuffed &nbsp; &nbsp; / + 150</option>
-                <option value="gluttenFree"
-                  >Glutten-free &nbsp; &nbsp; / + 300</option
-                >
-              </select>
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="herbs"
+                />
+                <label for="herbs" class="custom-control-label"> Herbs</label>
+              </div>
+
+              <!-- Crust -->
+              <div class="input-group my-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >Crust</label
+                  >
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected disabled>Choose Crust</option>
+                  <option value="crispy">Crispy &nbsp; &nbsp; / + 200</option>
+                  <option value="stuffed">Stuffed &nbsp; &nbsp; / + 150</option>
+                  <option value="gluttenFree"
+                    >Glutten-free &nbsp; &nbsp; / + 300</option
+                  >
+                </select>
+              </div>
+              <a href="#" class="btn btn-danger">Remove Item (s)</a>
             </div>
-            <a href="#" class="btn btn-danger">Remove Item (s)</a>
           </div>
         </div>
       </div>
