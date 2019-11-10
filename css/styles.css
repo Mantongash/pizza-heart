@@ -25,6 +25,7 @@ h4 {
 /* Links */
 .btn-success {
   display: block;
+  width: 50%;
 }
 
 /* Navbar */
