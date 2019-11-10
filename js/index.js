@@ -21,7 +21,7 @@ $(document).ready(function() {
     }
   );
 
-  // Marinara Pizza hover
+  // Sicilian Pizza hover
   $(".pizza-sicilian").hover(
     function() {
       $(".btn-sicilian").show(500);
@@ -30,5 +30,23 @@ $(document).ready(function() {
       $(".btn-sicilian").hide(500);
     }
   );
-  
+
+  // ### Display options on click ###
+  //Chicago button
+  $(".btn-chicago").click(function(event) {
+    event.preventDefault();
+    $(".chicago-options").show(500);
+  });
+
+  //Marinara button
+  $(".btn-marinara").click(function(event) {
+    event.preventDefault();
+    $(".marinara-options").show(500);
+  });
+
+  //Sicilian
+  $(".btn-sicilian").click(function(event) {
+    event.preventDefault();
+    $(".sicilian-options").show(500);
+  });
 });
