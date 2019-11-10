@@ -54,10 +54,9 @@ h4 {
 }
 
 .pizza-button {
-  display: block;
+  display: none;
   width: 50%;
   position: absolute;
-  opacity: 0;
 }
 
 .chicago-options,
