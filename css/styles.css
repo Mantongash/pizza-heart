@@ -4,3 +4,11 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Navbar */
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 1%;
+}
+
