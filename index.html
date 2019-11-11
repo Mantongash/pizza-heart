@@ -113,7 +113,9 @@
               </div>
               <select class="custom-select" id="chicago-size">
                 <option selected disabled>Choose Size</option>
-                <option value="1000">Large &nbsp; / &nbsp; KES: 1000</option>
+                <option value="1000" name="large"
+                  >Large &nbsp; / &nbsp; KES: 1000</option
+                >
                 <option value="750">Medium &nbsp; / &nbsp; KES: 750</option>
                 <option value="500">Small &nbsp; / &nbsp; KES: 500</option>
               </select>
@@ -126,7 +128,13 @@
                 <strong>NOTE:</strong> Topping prices vary depending on pizza
                 size
               </p>
-              <input type="checkbox" class="custom-control-input" id="beef" />
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="beef"
+                value="100"
+                text="Ground Beef"
+              />
               <label for="beef" class="custom-control-label">Ground Beef</label>
             </div>
             <div class="custom-control custom-checkbox">
@@ -134,6 +142,7 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="sausage"
+                value="150"
               />
               <label for="sausage" class="custom-control-label">Sausage</label>
             </div>
@@ -142,13 +151,19 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="pepperoni"
+                value="300"
               />
               <label for="pepperoni" class="custom-control-label"
                 >Pepperoni</label
               >
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="onions" />
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="onions"
+                value="70"
+              />
               <label for="onions" class="custom-control-label"> Onions</label>
             </div>
             <div class="custom-control custom-checkbox">
@@ -156,6 +171,7 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="mushrooms"
+                value="90"
               />
               <label for="mushrooms" class="custom-control-label"
                 >Mushrooms</label
@@ -232,6 +248,7 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="mozzarella"
+                value="200"
               />
               <label for="mozzarella" class="custom-control-label"
                 >Fresh Mozzarella</label
@@ -242,13 +259,19 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="tomatoes"
+                value="130"
               />
               <label for="tomatoes" class="custom-control-label"
                 >Tomatoes</label
               >
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="basil" />
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="basil"
+                value="150"
+              />
               <label for="basil" class="custom-control-label"
                 >Basil Leaves</label
               >
@@ -258,11 +281,17 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="oregano"
+                value="250"
               />
               <label for="oregano" class="custom-control-label"> Oregano</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="olive" />
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="olive"
+                value="110"
+              />
               <label for="olive" class="custom-control-label">Olive Oil</label>
             </div>
 
@@ -337,6 +366,7 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="sicilian-tomatoes"
+                value="130"
               />
               <label for="sicilian-tomatoes" class="custom-control-label"
                 >Tomatoes</label
@@ -347,6 +377,7 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="sicilian-onions"
+                value="70"
               />
               <label for="sicilian-onions" class="custom-control-label"
                 >Onions</label
@@ -357,6 +388,7 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="anchovies"
+                value="250"
               />
               <label for="anchovies" class="custom-control-label"
                 >Anchovies</label
@@ -386,6 +418,20 @@
         </div>
       </div>
     </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="row">Quantity</th>
+          <th scope="row">Size</th>
+          <th scope="row">Toppings</th>
+          <th scope="row">Totals</th>
+          
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
 
     <a href="#" class="btn btn-success d-block my-4 order" id="order"
       >Complete Order</a
