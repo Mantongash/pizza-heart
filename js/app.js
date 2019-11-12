@@ -154,5 +154,5 @@ checkout.addEventListener("click", function(event) {
   const deliveryInput = document.getElementById("delivery-input").value;
   const display = document.getElementById("display");
 
-  display.innerHTML = `Thank you for shopping with us. Your order will be delivered to ${deliveryInput}`;
+  display.innerHTML = `Thank you for shopping with us. Your order will be delivered to ${deliveryInput} for an extra KES 200`;
 });
