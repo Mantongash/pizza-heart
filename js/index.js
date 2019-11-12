@@ -49,4 +49,9 @@ $(document).ready(function() {
     event.preventDefault();
     $(".sicilian-options").show(500);
   });
+
+  //Delivery checkbox
+  if ($("#delivery").prop("checked")) {
+    $("#delivery-input").show();
+  }
 });
